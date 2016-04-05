@@ -4,16 +4,18 @@ Instrutor Carlos Antônio (Plataformatec)
 
 Criar app:
 > rails new nome-da-app
+> rails new used_cars
 
 Aprir servidor:
 > rails server
-//localhost:3000
+= localhost:3000
 
 Criando Controllers:
 > rails genetare controller 1nome 2nome etc...
 
 Criando CRUDs
 > rails generate scaffold objeto atributo1:tipo atributo2:tipo etc
+> rails generate scaffold car brand:string model:string year:integer
 
 Criando DB (SQLite):
 > rake db:create
@@ -29,3 +31,17 @@ RVM > curl -sSL https://get.rvm.io | bash -s stable
 Ruby > rvm install 2.1.1
 Rails > gem install rails -v=3.2.17
 ------------------------------
+
+URL para editar primeiro carro (exemplo):
+= http://localhost:3000/cars/1/edit
+
+Validação de campo obrigarorio na classe:
+- validates_presence_of :brand, :model
+
+Exibir rotas, caminhjos PUT GET POST:
+> rake routes
+
+Mudando a pagina raiz do Rails:
+- root to: "cars#index"
+
+IRB: Interactive Ruby shell
