@@ -1,0 +1,31 @@
+============== RUBY ON RAILS 3 ==================
+
+Instrutor Carlos Antônio (Plataformatec)
+
+Criar app:
+> rails new nome-da-app
+
+Aprir servidor:
+> rails server
+//localhost:3000
+
+Criando Controllers:
+> rails genetare controller 1nome 2nome etc...
+
+Criando CRUDs
+> rails generate scaffold objeto atributo1:tipo atributo2:tipo etc
+
+Criando DB (SQLite):
+> rake db:create
+> rake db:migrate
+
+----- Ruby no Windows --------
+Ruby: http://rubyinstaller.org/
+Rails: http://railsinstaller.org/pt-BR
+------------------------------
+
+----- Ruby no Ubuntu ---------
+RVM > curl -sSL https://get.rvm.io | bash -s stable
+Ruby > rvm install 2.1.1
+Rails > gem install rails -v=3.2.17
+------------------------------
