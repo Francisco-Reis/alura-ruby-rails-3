@@ -41,7 +41,35 @@ Validação de campo obrigarorio na classe:
 Exibir rotas, caminhjos PUT GET POST:
 > rake routes
 
-Mudando a pagina raiz do Rails:
+Mudando a pagina raiz do Rails 'config/routes.rb':
 - root to: "cars#index"
 
 IRB: Interactive Ruby shell
+Linha de comando para executar commandos ruby instantaneos
+
+
+Named Routes:
+/hello/world => hello_world_path
+/jobs => jobs_path
+
+Criar um link com named routes:
+- link_to("Jobs", jobs_path)
+
+Active Record: Mapeia as tabelas do BD para Ruby
+Herdam da calsse ActiveRecord::Base
+
+---
+RAILS CONSOLE: IRB com opções adicionais de rails
+Alguns comandos:
+Job.table_name = tabel relacionada a classe Job
+Job.first = primeiro registo
+Job.all = todos os registros
+Job.where(premium: false) = Todos que nao sam premmium
+---
+
+Adicionando uma nova coluna na tabela
+> rail generate migration add_premium_to_jobs premium:boolean
+> rake db:migrate
+Incluir no _form.html.erb:
+<%= f.label :premium %>
+<%= f.check_box :premium %>
