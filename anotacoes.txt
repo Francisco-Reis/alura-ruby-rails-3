@@ -65,6 +65,7 @@ Job.table_name = tabel relacionada a classe Job
 Job.first = primeiro registo
 Job.all = todos os registros
 Job.where(premium: false) = Todos que nao sam premmium
+reload! = recarrega, subindo todas as alterações feitas no codigo
 ---
 
 Adicionando uma nova coluna na tabela
@@ -73,3 +74,4 @@ Adicionando uma nova coluna na tabela
 Incluir no _form.html.erb:
 <%= f.label :premium %>
 <%= f.check_box :premium %>
+
